@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: auto 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.quote-container {
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    max-width: 800px;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+    color: lightgray;
+}
+
+.quote-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+}
+
+.quote-author {
+    font-style: italic;
+    font-size: 2rem;
+    margin-top: 16x;
+}
+
+button {
+    padding: 16px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+.button-container {
+    margin-top: 16px;
+}
+
+
+@media screen and (max-width=1000px) {
+
+    .quote-container {
+        margin: 16px;
+    }
+
+    .quote-text {
+        font-size: 2rem;
+    }
+
+}
