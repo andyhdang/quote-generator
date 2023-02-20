@@ -31,12 +31,12 @@ body {
 
 .quote-text {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .quote-author {
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 16x;
 }
 
@@ -56,11 +56,11 @@ button {
 @media screen and (max-width=1000px) {
 
     .quote-container {
-        margin: 16px;
+        margin: auto 16px;
     }
 
     .quote-text {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
 }
