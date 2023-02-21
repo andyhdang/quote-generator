@@ -4,6 +4,7 @@ const quoteAuthor = document.getElementById('quote-author')
 const newQuoteBtn = document.getElementById('new-quote')
 const twitterBtn = document.getElementById('twitter')
 const copyBtn = document.getElementById('copy-quote')
+const copiedBtn = document.getElementById('copied-quote')
 
 
 let apiQuotes = [];
@@ -13,8 +14,8 @@ function newQuote() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     quoteText.textContent = quote.text;
     quoteAuthor.textContent = quote.author;
-
-
+    copyBtn.style.display = "inline";
+    copiedBtn.style.display = "none";
 }
 
 // Step 1: get quotes from api
@@ -41,6 +42,8 @@ function tweetQuote() {
 //copy to clipboard
 function copyToClipboard() {
     navigator.clipboard.writeText(`${quoteText.textContent} - ${quoteAuthor.textContent}`);
+    copyBtn.style.display = "none";
+    copiedBtn.style.display = "inline";
     // alert('Quote copied!');
 }
 
